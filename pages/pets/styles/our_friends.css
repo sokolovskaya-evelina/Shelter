@@ -1,0 +1,127 @@
+.our_friends {
+  padding: 201px 0 100px 0;
+  text-align: center;
+  background: #f6f6f6;
+}
+
+.our_friends .content {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.our_friends h3 {
+  padding-left: 1px;
+}
+
+.our_friends .block-slides {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 59px 30px 30px 30px;
+}
+
+.our_friends .block-slides .slides {
+  position: relative;
+  left: 0%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  min-width: 100%;
+}
+
+.our_friends .block-slides .slides .card {
+  padding-bottom: 30px;
+  margin: 0 10px 30px 10px;
+  background: #fafafa;
+  border-radius: 9px;
+
+  transition: 0.3s ease-in-out;
+}
+
+.our_friends .block-slides .slides .card:hover {
+  cursor: pointer;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+
+.our_friends .block-slides .slides .card img {
+  width: 270px;
+  border-radius: 9px 9px 0px 0px;
+}
+
+.our_friends .block-slides .slides .card h5 {
+  padding-top: 28px;
+  padding-bottom: 30px;
+  padding-left: 1px;
+  font-family: Georgia;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.our_friends .block-control {
+  display: flex;
+  justify-content: center;
+}
+
+.to-left {
+  animation: left 0.5s ease-in-out;
+}
+
+.to-right {
+  animation: left 0.5s ease-in-out reverse;
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .our_friends {
+    padding: 201px 0 76px 0;
+  }
+
+  .our_friends .block-slides {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  .our_friends .block-slides .slides {
+    justify-content: space-around;
+  }
+
+  .our_friends .block-slides .slides .card:nth-child(7),
+  .our_friends .block-slides .slides .card:nth-child(8) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .our_friends .block-slides {
+    padding: 29px 74px 10px 74px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .our_friends .block-slides .slides .card:nth-child(4),
+  .our_friends .block-slides .slides .card:nth-child(5),
+  .our_friends .block-slides .slides .card:nth-child(6) {
+    display: none;
+  }
+
+  .our_friends {
+    padding: 162px 0 42px 0;
+  }
+  .our_friends .block-slides {
+    max-width: 576px;
+    padding: 42px 74px 12px 74px;
+  }
+}

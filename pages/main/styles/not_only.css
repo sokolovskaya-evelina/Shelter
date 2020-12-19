@@ -1,0 +1,89 @@
+.not_only {
+  margin-top: -180px;
+  padding-top: 180px;
+  background: url(../../../assets/images/noise_transparent@2x.png),
+    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+}
+
+.not_only .content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.not_only .content .block-photo img {
+  width: 100%;
+  margin-bottom: -2px;
+}
+
+.not_only .content .block-text .text {
+  max-width: 460px;
+}
+
+.not_only .content .block-text .text h2 {
+  padding-top: 163px;
+  font-family: Georgia;
+  font-size: 44px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.not_only .content .block-text .text p {
+  padding-top: 42px;
+  padding-bottom: 41px;
+  line-height: 160%;
+  color: #cdcdcd;
+}
+
+@media screen and (max-width: 1279px) {
+  .not_only .content {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .not_only .content .block-text {
+    width: 100%;
+  }
+
+  .not_only .content .block-text .text {
+    margin: 0 auto;
+    padding-bottom: 100px;
+  }
+
+  .not_only .content .block-text .text .block-btn {
+    text-align: center;
+  }
+
+  .not_only .content .block-text .text p {
+    padding-bottom: 42px;
+  }
+
+  .not_only .content .block-text .text h2 {
+    padding-top: 0px;
+  }
+
+  .not_only .content .block-photo {
+    padding-left: 139px;
+  }
+
+  .not_only .content .block-photo img {
+    max-width: 550px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .not_only .content .block-text .text {
+    text-align: center;
+    padding-bottom: 105px;
+    max-width: 400px;
+  }
+
+  .not_only .content .block-text .text h2 {
+    letter-spacing: 0.06em;
+    font-size: 25px;
+  }
+
+  .not_only .content .block-photo {
+    padding-left: 40px;
+  }
+}

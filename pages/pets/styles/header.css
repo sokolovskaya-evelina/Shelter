@@ -1,0 +1,212 @@
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  background: #fff;
+  z-index: 3;
+  transition: 0.4s ease-in-out;
+}
+
+header.transparent {
+  background: rgb(155, 155, 155);
+}
+
+header .content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .logo-burger {
+  display: none;
+}
+
+header .main-logo {
+  position: relative;
+  overflow: hidden;
+  width: 190px;
+  transition: 0.6s ease-in-out;
+}
+
+header .main-logo.close {
+  width: 0;
+}
+
+header .logo h4 {
+  min-width: 186px;
+  padding-top: 1px;
+  padding-bottom: 8px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+header .logo span {
+  display: block;
+  min-width: 186px;
+  padding-left: 4px;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: #292929;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav .burger-menu {
+  display: none;
+  align-items: center;
+  width: 30px;
+  height: 18px;
+  margin-top: 1px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out;
+}
+
+header nav .burger-menu span {
+  width: 100%;
+  height: 0px;
+  border-top: 2px solid #000000;
+}
+
+header nav .header-menu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header nav .header-menu li {
+  margin-top: -5px;
+  margin-right: 36px;
+}
+
+header nav .header-menu li:last-child {
+  margin-right: 0px;
+}
+
+header nav .header-menu li a {
+  position: relative;
+  display: inline-block;
+  color: #545454;
+  line-height: 160%;
+  transition: 0.3s ease-in-out;
+  cursor: default;
+}
+
+header nav .header-menu li a.dynamic:hover {
+  color: #292929;
+  cursor: pointer;
+}
+
+header nav .header-menu li .active.dynamic {
+  color: #292929;
+  border-bottom: 3px solid #f1cdb3;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  header .content {
+    align-items: center;
+  }
+
+  header .logo-burger {
+    position: absolute;
+    height: 90px;
+    box-sizing: border-box;
+    margin: 30px 0 0 10px;
+    display: block;
+  }
+
+  header .logo-burger h4 {
+    color: #f1cdb3;
+  }
+
+  header .logo-burger span {
+    color: #ffffff;
+  }
+
+  header nav .burger-menu {
+    position: relative;
+    display: flex;
+    z-index: 2;
+  }
+
+  header nav .bg-menu {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 0px;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    z-index: 1;
+  }
+
+  header nav .header-menu {
+    width: 320px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #292929;
+  }
+
+  header nav .header-menu li a {
+    color: #cdcdcd;
+  }
+
+  header nav .header-menu li .active,
+  header nav .header-menu li a:hover {
+    color: #fafafa;
+  }
+
+  header nav .open-menu {
+    width: 320px;
+  }
+
+  header nav .header-menu li {
+    margin: 0;
+    margin-bottom: 5.56%;
+  }
+
+  header nav .header-menu li:last-child {
+    margin-bottom: 0;
+  }
+
+  header nav .header-menu li a {
+    font-size: 32px;
+    line-height: 160%;
+  }
+
+  header nav .header-menu li .active.dynamic {
+    color: #fafafa;
+  }
+
+  header nav .animation-burger {
+    transform: rotate(-90deg);
+  }
+
+  header nav .animation-burger {
+    border-top: 2px solid #f1cdb3;
+    border-bottom: 2px solid #f1cdb3;
+  }
+
+  header nav .animation-burger span {
+    border-top: 2px solid #f1cdb3;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  header nav .burger-menu {
+    margin-right: 43px;
+  }
+}

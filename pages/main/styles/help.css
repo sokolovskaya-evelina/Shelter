@@ -1,0 +1,79 @@
+.help {
+  padding: 80px 0 100px 0;
+  text-align: center;
+}
+
+.help .content {
+  padding-top: 5px;
+}
+
+.help .content ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.help .content ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 113px;
+  padding: 55px 60px 0 60px;
+}
+
+.help .content ul li h6 {
+  font-family: Georgia;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+@media screen and (max-width: 1279px) {
+  .help {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .help .content ul {
+    justify-content: space-around;
+    padding: 0px 9px;
+  }
+
+  .help .content ul li {
+    width: 174px;
+    padding: 55px 0px 0 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .help {
+    max-width: 436px;
+    padding: 42px 0;
+  }
+
+  .help .content {
+    padding-top: 12px;
+  }
+
+  .help .content ul {
+    padding: 0px 5px;
+    justify-content: space-between;
+  }
+
+  .help .content ul li {
+    height: 87px;
+    width: 130px;
+    padding: 30px 0px 0 0px;
+  }
+
+  .help .content ul li img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .help .content ul li h6 {
+    font-size: 15px;
+  }
+}

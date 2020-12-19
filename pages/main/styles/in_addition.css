@@ -1,0 +1,121 @@
+.in_addition {
+  padding: 80px 0 100px 0;
+  background: #f6f6f6;
+}
+
+.in_addition .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.in_addition .content .block-photo img {
+  width: 100%;
+  margin-top: 1px;
+}
+
+.in_addition .content .block-text .text {
+  padding-left: 30px;
+}
+
+.in_addition .content .block-text .text h6 {
+  padding: 20px 0;
+  font-family: Georgia;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.in_addition .content .block-text .text p {
+  max-width: 380px;
+  padding-top: 20px;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 18px;
+  color: #b2b2b2;
+}
+
+.in_addition .content .block-text .text a {
+  width: 319px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background: #f1cdb3;
+  border-radius: 9px;
+
+  transition: 0.3s ease-in-out;
+}
+
+.in_addition .content .block-text .text a:hover {
+  background: #fddcc4;
+}
+
+.in_addition .content .block-text .text a span {
+  font-family: Georgia;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+@media screen and (max-width: 1279px) {
+  .in_addition {
+    padding: 81px 0 98px 0;
+  }
+
+  .in_addition .content {
+    flex-wrap: wrap;
+  }
+
+  .in_addition .content .block-text {
+    width: 100%;
+  }
+
+  .in_addition .content .block-text .text {
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 0px;
+  }
+
+  .in_addition .content .block-photo {
+    padding-top: 59px;
+    margin-left: -1px;
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .in_addition {
+    padding: 42px 10px 41px;
+  }
+
+  .in_addition .content .block-text .text {
+    text-align: center;
+  }
+
+  .in_addition .content .block-text .text a {
+    display: inline-flex;
+    width: 251px;
+  }
+
+  .in_addition .content .block-text .text a span {
+    padding-top: 2px;
+    font-size: 15px;
+  }
+
+  .in_addition .content .block-text .text h6 {
+    font-family: Arial;
+    padding: 24px 0 25px 3px;
+    letter-spacing: 0em;
+  }
+
+  .in_addition .content .block-text .text p {
+    text-align: justify;
+    font-stretch: expanded;
+  }
+
+  .in_addition .content .block-photo {
+    padding-top: 40px;
+  }
+}

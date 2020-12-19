@@ -1,0 +1,169 @@
+body {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  height: 100%;
+}
+
+.center {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 0px;
+}
+
+h3 {
+  font-family: Georgia;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.btn-primary,
+.btn-white {
+  outline: none;
+  border: 2px solid transparent;
+  padding: 13px 42.8px;
+  background: #f1cdb3;
+  border-radius: 100px;
+
+  font-family: Georgia;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+
+  transition: 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: #fddcc4;
+  cursor: pointer;
+}
+
+.btn-white {
+  border: 2px solid #f1cdb3;
+  box-sizing: content-box;
+  border-radius: 42px;
+  background: #fff;
+}
+
+.btn-white:hover {
+  border: 2px solid #fddcc4;
+  background: #fddcc4;
+  cursor: pointer;
+}
+
+.btn-control,
+.btn-count-page {
+  margin: 0 10px;
+  padding-bottom: 1px;
+  padding-left: 0.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border: 2px solid #f1cdb3;
+  box-sizing: border-box;
+  border-radius: 100px;
+
+  transition: 0.3s ease-in-out;
+}
+
+.btn-control span,
+.btn-count-page {
+  font-family: Georgia;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #292929;
+}
+
+.disabled {
+  border: 2px solid #cdcdcd;
+}
+
+.disabled span {
+  color: #cdcdcd;
+}
+
+.btn-control:hover {
+  border: 2px solid #fddcc4;
+  background: #fddcc4;
+  cursor: pointer;
+}
+
+.btn-control-active,
+.btn-count-page {
+  border: 2px solid #f1cdb3;
+  background: #f1cdb3;
+}
+
+.disabled:hover {
+  border: 2px solid #cdcdcd;
+  background: transparent;
+  cursor: not-allowed;
+}
+
+.control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 52px;
+  max-width: 52px;
+  height: 52px;
+  border: 2px solid #f1cdb3;
+  box-sizing: border-box;
+  border-radius: 100px;
+  transition: 0.3s ease-in-out;
+}
+
+.control span {
+  font-family: Georgia;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #292929;
+}
+
+.control:hover {
+  border: 2px solid #fddcc4;
+  background: #fddcc4;
+  cursor: pointer;
+}
+
+.control.active {
+  border: 2px solid #fddcc4;
+  background: #fddcc4;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1279px) {
+  .center {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .center {
+    padding: 0 20px;
+  }
+
+  h3 {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .center {
+    max-width: 320px;
+    padding: 0 10px;
+  }
+}

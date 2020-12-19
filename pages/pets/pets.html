@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/our_friends.css">
+    <link rel="stylesheet" href="./styles/popup.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <title>pets</title>
+</head>
+
+<body>
+    <div class="popup-burger" style="display: none"></div>
+    <div class="popup-card" style="display: none"></div>
+    <header>
+        <div class="center">
+            <div class="content">
+                <a href="../main/main.html" class="logo main-logo">
+                    <h4>Cozy House</h4>
+                    <span>Shelter for pets in Boston</span>
+                </a>
+                <nav class="nav">
+                    <div class="burger-menu">
+                        <span></span>
+                    </div>
+                    <div class="bg-menu">
+                        <a href="../main/main.html" class="logo logo-burger">
+                            <h4>Cozy House</h4>
+                            <span class="sub-title">Shelter for pets in Boston</span>
+                        </a>
+                        <ul class="header-menu">
+                            <li>
+                                <a class="header-link dynamic" href="../main/main.html">About the shelter</a>
+                            </li>
+                            <li>
+                                <a class="header-link dynamic active" href="#">Our pets</a>
+                            </li>
+                            <li>
+                                <a class="header-link disable">Help the shelter</a>
+                            </li>
+                            <li><a class="header-link disable">Contacts</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="our_friends">
+            <div class="content">
+                <h3>Our friends who<br>
+                    are looking for a house</h3>
+                <div class="block-slides">
+                </div>
+                <div class="block-control">
+                    <button class="btn-control to-start disabled">
+                        <span>&#60;&#60;</span>
+                    </button>
+                    <button class="btn-control prev disabled">
+                        <span>&#60;</span>
+                    </button>
+                    <button class="btn-count-page">
+                        <span class="count-page">1</span>
+                    </button>
+                    <button class="btn-control next">
+                        <span>&#62;</span>
+                    </button>
+                    <button class="btn-control to-end">
+                        <span>&#62;&#62;</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="center">
+            <div class="content">
+                <div class="block-text">
+                    <div class="block-contact">
+                        <h3>For questions and suggestions</h3>
+                        <a href="mailto:email@shelter.com" target="blank">
+                            <img src="../../assets/icons/mail.svg" alt="mail" style="padding-bottom: 1px;">
+                            <h4>email@shelter.com</h4>
+                        </a>
+                        <a href="tel:+136745677554">
+                            <img src="../../assets/icons/phone.svg" alt="phone">
+                            <h4>+13 674 567 75 54</h4>
+                        </a>
+                    </div>
+                    <div class="block-contact content-center">
+                        <h3>We are waiting for your visit</h3>
+                        <a href="https://goo.gl/maps/J5tA8Rw3Kvw9yV5J8" target="blank" style="padding-bottom: 1px;">
+                            <img src="../../assets/icons/pin.svg" alt="pin">
+                            <h4>1 Central Street, Boston<br> (entrance from the store)</h4>
+                        </a>
+                        <a href="https://goo.gl/maps/GNLewHL7GnKZDK6k9" target="blank">
+                            <img src="../../assets/icons/pin.svg" alt="pin">
+                            <h4>18 South Park, London</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="block-photo">
+                    <img src="../../assets/images/footer-puppy.png" alt="footer-puppy">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="./pets.js"></script>
+</body>
+
+</html>
